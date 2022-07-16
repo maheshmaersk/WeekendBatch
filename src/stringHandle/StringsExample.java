@@ -53,8 +53,19 @@ public class StringsExample {
         System.out.println(abc.replace("How ",""));
         System.out.println(abc.startsWith("How"));
         System.out.println(abc.endsWith("you"));
+        System.out.println(isPalindrome("nitin"));
+
+    }
 
 
-
+    public static boolean isPalindrome(String str){
+        StringBuilder sb=new StringBuilder(str);
+        sb.reverse();
+        String rev=sb.toString();
+        if(str.equals(rev)){
+            return true;
+        }else{
+            return false;
+        }
     }
 }
